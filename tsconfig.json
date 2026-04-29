@@ -8,7 +8,7 @@
     "target": "esnext",
     "moduleResolution": "nodenext",
     "esModuleInterop": true,
-    "types": [],
+    "types": ["jest"],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
