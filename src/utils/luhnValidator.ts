@@ -1,12 +1,12 @@
 const isValidLuhn = (cardNumber: string): boolean => {
-  const newCardNumber = cardNumber.replace(/\D/g, '')
+  const sanitizedCardNumber = cardNumber.replace(/\D/g, '')
 
   let sum = 0
 
-  for (let i = newCardNumber.length - 1; i >= 0; i--) {
-    let digit = Number(newCardNumber[i])
+  for (let i = sanitizedCardNumber.length - 1; i >= 0; i--) {
+    let digit = Number(sanitizedCardNumber[i])
 
-    if ((newCardNumber.length - i) % 2 === 0) {
+    if ((sanitizedCardNumber.length - i) % 2 === 0) {
       digit = digit * 2
     } else {
       digit = digit
