@@ -9,6 +9,10 @@ const PORT = process.env.PORT || 3000
 app.use(express.json())
 app.use('/api', cardValidationRoutes)
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Card Number Validation API!')
+})
+
 app.listen(PORT, () => {
   console.log(`[server]: App listening on port: ${PORT}`)
 })
