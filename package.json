@@ -1,0 +1,27 @@
+{
+  "name": "card-number-validation",
+  "version": "1.0.0",
+  "description": "This API validates card numbers using the Luhn algorithm.",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.ts",
+    "dev": "tsx --watch src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Matilda Njau",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
