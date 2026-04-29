@@ -1,7 +1,5 @@
-import type { CardNumber } from '../interface/cardNumber.js'
-
-const isValidLuhn = (cardNumber: CardNumber): boolean => {
-  const newCardNumber = cardNumber.numberOnCard.replace(' ', '')
+const isValidLuhn = (cardNumber: string): boolean => {
+  const newCardNumber = cardNumber.replace(' ', '')
 
   let sum = 0
 
@@ -11,7 +9,7 @@ const isValidLuhn = (cardNumber: CardNumber): boolean => {
     if ((newCardNumber.length - i) % 2 === 0) {
       digit = digit * 2
     } else {
-      digit
+      digit = digit
     }
 
     if (digit > 9) {
