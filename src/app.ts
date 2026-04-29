@@ -10,7 +10,9 @@ app.use(express.json())
 app.use('/api', cardValidationRoutes)
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Card Number Validation API!')
+  res
+    .status(200)
+    .json({ message: 'Welcome to the Card Number Validation API!' })
 })
 
 app.listen(PORT, () => {
