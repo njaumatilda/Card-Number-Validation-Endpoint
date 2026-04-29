@@ -1,0 +1,3 @@
+const validateCardNumber = () => {}
+
+export { validateCardNumber }
