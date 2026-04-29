@@ -1,6 +1,6 @@
 # Card Validation API
 
-A RESTful API that is used to validated card numbers using the Luhn Algorithm.
+A RESTful API that is used to validate card numbers using the Luhn Algorithm.
 
 ## Core Feature
 
