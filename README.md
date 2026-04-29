@@ -6,7 +6,7 @@ A RESTful API that is used to validated card numbers using the Luhn Algorithm.
 
 - Provides a POST endpoint that accepts a card number and returns whether it is valid or not.
 
-## Prerequisites | Requirements
+## Requirements
 - Node.js (v18 or higher recommended)
 - pnpm
 
