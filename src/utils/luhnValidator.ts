@@ -1,5 +1,5 @@
 const isValidLuhn = (cardNumber: string): boolean => {
-  const newCardNumber = cardNumber.replace(' ', '')
+  const newCardNumber = cardNumber.replace(/\D/g, '')
 
   let sum = 0
 
