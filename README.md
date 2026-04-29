@@ -83,6 +83,9 @@ Check if a card number is valid based on industry-standard algorithm.
   "error": "Invalid card number"
 }
 ```
+## Deployment
+The API has been deployed to a publicly accessible endpoint on Render:
+[Live URL](https://card-number-validation-endpoint.onrender.com/)
 
 ## Author
 
